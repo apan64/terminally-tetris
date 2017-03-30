@@ -42,6 +42,8 @@ void print_array1(const int a[c][c]) // cxc const int matrix
 };
 
 int rotate90(Block* b){
+    /* Rotates block 90 degrees clockwise
+    using matrix multiplication with rotation matrix.*/
     int matC[2][2]={0};
     int matA[r][c];
     int i,j,k,z;
@@ -50,13 +52,15 @@ int rotate90(Block* b){
       memcpy(&matA[z], &b->cells[z], sizeof(b->cells[0]));
 
     }
-    for (i=0;i<r;i++) {
-      for (j=0;j<2;j++) {
-        for (k=0;k<2;k++) {
-          matC[i][j] += matA[i][k] * rotation_matrix[k][j];
+    for(i=0;i<r;i++){ //row of first matrix
+      for(j=0;j<c;j++){  //column of second matrix
+      int sum=0;
+        for(k=0;k<c;k++) {
+          sum=sum+matA[i][k]*rotation_matrix[k][j];
+          matC[i][j]=sum;
         }
       }
-    }
+    };
     print_array2(matC);
 };
 
@@ -64,7 +68,7 @@ int main()
 {
   printf("------------------------------------\n");
   Block *block = malloc(sizeof(Block));
-  memcpy(block->cells,TBlock,sizeof(TBlock));
+  memcpy(block->cells,OBlock,sizeof(OBlock));
   rotate90(block);
 
       return 0;
