@@ -17,6 +17,7 @@ extern const int ZBlock[4][2];
 extern const int SBlock[4][2];
 extern const int JBlock[4][2];
 extern const int LBlock[4][2];
+extern const int rotation_matrix[2][2];
 
 /*
  * Taken from https://i.stack.imgur.com/JLRFu.png
