@@ -18,18 +18,6 @@ void print_array2(int a[4][2]){ // rxc int matrix
    } printf("\n");
 };
 
-// void print_array1(const int a[2][2]) // cxc int matrix
-// {
-//    int i,j;
-//    /* print each row of the array */
-//    for (i = 0; i < 2; i++) {
-//       for (j = 0; j < 2; j++)
-//          printf("%6i ", a[i][j]);
-//       printf("\n");
-//    }
-//    printf("\n");
-// };
-
 
 void rotate_block(Block* b, const int rotation_matrix[2][2]){
     /* Rotates block 90 degrees
@@ -53,15 +41,10 @@ void rotate_block(Block* b, const int rotation_matrix[2][2]){
 
 };
 
-// void rotate_I(Block* b, const int rotation_matrix[2][2]){
-//
-// };
-
 void rotate_right(Block* b){
   /* Rotates block 90 degrees CLOCKWISE.
   Checks block type for exception rotation cases. */
   switch(b->type) {
-    // case I: rotate_I(Block* b, rotation_matrix_R);
     case O: break;
     default: rotate_block(Block* b, rotation_matrix_R);
   }
@@ -71,7 +54,6 @@ void rotate_left(Block* b){
   /* Rotates block 90 degrees COUNTER-CLOCKWISE.
   Checks block type for exception rotation cases. */
   switch(b->type) {
-    // case I: rotate_I(Block* b, rotation_matrix_L);
     case O: break;
     default: rotate_block(Block* b, rotation_matrix_L);
 
@@ -84,6 +66,7 @@ int main()
   memcpy(block->cells,TBlock,sizeof(TBlock));
   print_array2(block->cells);
   printf("------------------------------------\n");
+  rotate_right(block);
   printf("------------------------------------\n");
   print_array2(block->cells);
 

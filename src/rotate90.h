@@ -11,7 +11,6 @@
 #include "controller.h"
 
 void rotate_block(Block* b, const int rotation_matrix[2][2]);
-// void rotate_I(Block* b, const int rotation_matrix[2][2]);
 
 void rotate_right(Block* b);
 void rotate_left(Block *b);
