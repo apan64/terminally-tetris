@@ -34,8 +34,6 @@ void rotate_block(Block* b, const int rotation_matrix[2][2]){
     }}};
 
     // reassign block's cells to the rotated coordinates
-    printf("MATC\n");
-    print_array2(matC);
     memcpy(b->cells, matC, sizeof(b->cells));
     print_array2(b->cells);
 
@@ -46,7 +44,7 @@ void rotate_right(Block* b){
   Checks block type for exception rotation cases. */
   switch(b->type) {
     case O: break;
-    default: rotate_block(Block* b, rotation_matrix_R);
+    default: rotate_block(b, rotation_matrix_R);
   }
 };
 
@@ -55,7 +53,7 @@ void rotate_left(Block* b){
   Checks block type for exception rotation cases. */
   switch(b->type) {
     case O: break;
-    default: rotate_block(Block* b, rotation_matrix_L);
+    default: rotate_block(b, rotation_matrix_L);
 
   }
 };
