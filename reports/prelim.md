@@ -36,9 +36,13 @@ Some stretch goals include:
 | Execution modes (pause, quit, etc.) | [sk/pause-quit](https://github.com/thecardkid/SoftSysBombassticBamboo/commit/929e809b42c7cfd60ec4b6d7fffe57de7aedade1)
 
 ## Preliminary Results
-[releases/preliminary](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/releases/preliminary)
+![prelim_demo](prelim_demo.gif)
+
+We have completed our minimum viable product of a playable Tetris game with all accompanying features. A snapshot of the current version of the game is available [here](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/releases/preliminary). To install and play the game, follow the guide below.
+
 ### Quickstart
 ```
+sudo apt-get install libncurses5-dev
 git clone -b releases/preliminary git@github.com:thecardkid/SoftSysBombassticBamboo.git
 cd SoftSysBombassticBamboo
 make
