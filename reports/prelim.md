@@ -34,6 +34,7 @@ Some stretch goals include:
 | Boss mode | [hn/boss-mode](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/hn/boss-mode)
 
 ## Preliminary Results
+![prelim_demo](prelim_demo.gif)
 [releases/preliminary](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/releases/preliminary)
 ### Quickstart
 ```
