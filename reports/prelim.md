@@ -35,10 +35,12 @@ Some stretch goals include:
 
 ## Preliminary Results
 ![prelim_demo](prelim_demo.gif)
+
 We have completed our minimum viable product of a playable Tetris game with all accompanying features. A snapshot of the current version of the game is available [here](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/releases/preliminary). To install and play the game, follow the guide below.
 
 ### Quickstart
 ```
+sudo apt-get install libncurses5-dev
 git clone -b releases/preliminary git@github.com:thecardkid/SoftSysBombassticBamboo.git
 cd SoftSysBombassticBamboo
 make
