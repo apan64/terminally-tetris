@@ -34,7 +34,8 @@ Some stretch goals include:
 | Boss mode | [hn/boss-mode](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/hn/boss-mode)
 
 ## Preliminary Results
-[releases/preliminary](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/releases/preliminary)
+We have completed our minimum viable product of a playable Tetris game with all accompanying features. A snapshot of the current version of the game is available [here](https://github.com/thecardkid/SoftSysBombassticBamboo/tree/releases/preliminary). To install and play the game, follow the guide below.
+
 ### Quickstart
 ```
 git clone -b releases/preliminary git@github.com:thecardkid/SoftSysBombassticBamboo.git
